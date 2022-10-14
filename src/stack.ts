@@ -10,12 +10,12 @@ class Stack {
   readonly stackArray: number[] = []
 
   // getters
-  public getStack(): number[] {
+  public getStack (): number[] {
     return this.stackArray
   }
 
   // methods
-  public push(pushedNumber: number): void {
+  public push (pushedNumber: number): void {
     // add a number to the array
     if (isNaN(+pushedNumber)) {
       console.log('That is not a number.')
@@ -24,7 +24,7 @@ class Stack {
     }
   }
 
-  public pop(): void {
+  public pop (): void {
     // remove a number to the array
     if (this.stackArray.length === 0) {
       console.log('You cannot pop without values in the array')
@@ -33,7 +33,7 @@ class Stack {
     }
   }
 
-  public peek(): void {
+  public peek (): void {
     // get the first value of an array
     if (this.stackArray.length === 0) {
       console.log('You cannot get the peak without any numbers!')
@@ -42,7 +42,7 @@ class Stack {
     }
   }
 
-  public clear(): void {
+  public clear (): void {
     // clears the entire list
     this.stackArray.splice(0)
   }
