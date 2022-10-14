@@ -38,7 +38,7 @@ class Stack {
     if (this.stackArray.length === 0) {
       console.log('You cannot get the peak without any numbers!')
     } else {
-      console.log(`The peek is: ${this.stackArray[0]}`)
+      console.log(`The peek is: ${this.stackArray[this.stackArray.length - 1]}`)
     }
   }
 
